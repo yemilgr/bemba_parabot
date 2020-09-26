@@ -4,6 +4,10 @@ const conspiracy = require('./conspirations');
 
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
+bot.catch((err, ctx) => {
+  console.log(`Ooops, encountered an error for ${ctx.updateType}`, err)
+})
+
 bot.start(async (ctx) => {
     await ctx.replyWithHTML(`Hola <strong>${ctx.from.first_name}</strong>, Soy Bemba ParaBot, que quires saber hoy 🤔🤔🤔`);
     showMenu(ctx);
