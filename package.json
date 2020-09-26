@@ -1,0 +1,30 @@
+{
+  "name": "bemba_parabot",
+  "version": "1.0.0",
+  "description": "Bemba parabot telegram",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node -r dotenv/config bot.js",
+    "dev": "nodemon -r dotenv/config bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yemilgr/bemba_parabot.git"
+  },
+  "keywords": [
+    "conspiracy",
+    "bemba",
+    "bot"
+  ],
+  "author": "@yemilgr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yemilgr/bemba_parabot/issues"
+  },
+  "homepage": "https://github.com/yemilgr/bemba_parabot#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "telegraf": "^3.38.0"
+  }
+}
