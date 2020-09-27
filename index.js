@@ -51,5 +51,5 @@ function showMenu(ctx) {
     ctx.replyWithHTML('/quiensoy      --- QUIÉN SOY? \n/conspiracion --- CONSPIRACIÓN 🤔 \n/help             --- AYUDA');
 }
 
-//lunch bot
+// Export bot handler
 module.exports = bot;
