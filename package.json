@@ -2,11 +2,10 @@
   "name": "bemba_parabot",
   "version": "1.0.0",
   "description": "Bemba parabot telegram",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config bot.js",
-    "dev": "nodemon -r dotenv/config bot.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "micro-bot",
+    "dev": "nodemon -r dotenv/config index.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +24,7 @@
   "homepage": "https://github.com/yemilgr/bemba_parabot#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "micro-bot": "^2.5.3",
     "telegraf": "^3.38.0"
   }
 }

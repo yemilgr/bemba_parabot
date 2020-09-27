@@ -1,12 +1,11 @@
-require('dotenv').config();
-const { Telegraf } = require('telegraf');
+const { Composer } = require('micro-bot');
 const conspiracy = require('./conspirations');
 
-const bot = new Telegraf(process.env.BOT_TOKEN);
+const bot = new Composer();
 
 bot.catch((err, ctx) => {
-  console.log(`Ooops, encountered an error for ${ctx.updateType}`, err)
-})
+    console.log(`Ooops, encountered an error for ${ctx.updateType}`, err);
+});
 
 bot.start(async (ctx) => {
     await ctx.replyWithHTML(`Hola <strong>${ctx.from.first_name}</strong>, Soy Bemba ParaBot, que quires saber hoy 🤔🤔🤔`);
@@ -53,4 +52,4 @@ function showMenu(ctx) {
 }
 
 //lunch bot
-bot.launch();
+module.exports = bot;
