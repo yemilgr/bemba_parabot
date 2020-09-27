@@ -40,10 +40,7 @@ bot.command('conspiracion', async (ctx) => {
 
 bot.command('mimensaje', async (ctx) => {
     await ctx.replyWithHTML(
-        '<strong>Este bot es solo una broma entre amigos, no tome en serio ningun mensaje difundido por esta plataforma.</strong> \n\n Las teorías de la conspiración pueden ser vistas como divertidas, pero son potencialmente peligrosas: "Las teorías de la conspiración tienen consecuencias negativas para la sociedad. Esto es especialmente cierto en el caso de una pandemia, ya que la creencia en conspiraciones puede dañar o incluso matar a la gente. Por consiguiente, es esencial que el público esté informado sobre cómo identificar las teorías de la conspiración para que pueda ignorarlas'
-    );
-    await ctx.reply(
-        'Comparte estos recursos de aprendizaje para que todos podamos participar en la educación entre iguales sobre estos temas. Resistir a la Desinfodemia: Alfabetización mediática e informativa para todos, de todos.'
+        '<strong>Este bot es solo una broma entre amigos, no tome en serio ningun mensaje difundido por esta plataforma.</strong> \n\n Las teorías de la conspiración pueden ser vistas como divertidas, pero son potencialmente peligrosas: "Las teorías de la conspiración tienen consecuencias negativas para la sociedad. Esto es especialmente cierto en el caso de una pandemia, ya que la creencia en conspiraciones puede dañar o incluso matar a la gente. Por consiguiente, es esencial que el público esté informado sobre cómo identificar las teorías de la conspiración para que pueda ignorarlas. \n\n Comparte estos recursos de aprendizaje para que todos podamos participar en la educación entre iguales sobre estos temas. Resistir a la Desinfodemia: Alfabetización mediática e informativa para todos, de todos.'
     );
     await ctx.replyWithDocument('https://conspiracytheories.eu/_wpx/wp-content/uploads/2020/03/COMPACT_Guide-2.pdf');
     await ctx.replyWithDocument('https://www.climatechangecommunication.org/wp-content/uploads/2020/03/ConspiracyTheoryHandbook.pdf');
