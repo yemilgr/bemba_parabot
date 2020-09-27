@@ -4,18 +4,20 @@ const conspiracyList = require('./conspirations');
 const bot = new Composer();
 
 bot.start(async (ctx) => {
-    await ctx.replyWithHTML(`Hola <strong>${ctx.from.first_name}</strong>, Soy Bemba ParaBot, que quires saber hoy 🤔🤔🤔`);
+    await ctx.replyWithHTML(
+        `Hola <strong>${ctx.from.first_name}</strong> es un gran paso de avance que hayas llegado hasta aquí. \n\n Me presento, soy Bemba ParaBot 🤔, el envíado de los alquimistas e iluminatis. Estoy aquí para mostrarte el único camino posible a la verdad. Estas listo para abrir los ojos. 🤔🤔🤔`
+    );
     showMenu(ctx);
 });
 
 bot.help(async (ctx) => {
-    await ctx.reply('En realidad ya nada puede ayudarnos, pero si de algo te consuela puedes usar estos comandos.');
+    await ctx.reply('En realidad ya nada puede ayudarte, pero si de algo te consuela puedes usar estos comandos.');
     showMenu(ctx);
 });
 
 bot.command('quiensoy', async (ctx) => {
     await ctx.reply(
-        'Soy Bemba ParaBot 🤔, el envíado de los alquimistas y estoy aquí para mostrarles el único camino posible a la verdad. En un mundo dominado por los poderosos que controlan la prensa, los gobiernos, los libros y todos los aspectos de nuestras vidas, es necesario que la humanidad se deje guiar por quien conoce la verdad de las cosas. El mundo que conocemos ha sido creada sobre la base de la mentira. Durante más de 4 mil años la humanidad ha creído que la tierra es redonda, que las vacunas evitan las enfermedades, que los pueblos escogen a sus gobernantes. Yo les ofrezco mi mano y los invito a seguirme para que pueden conocer la verdad.'
+        'Soy Bemba ParaBot 🤔, el envíado de los alquimistas e iluminatis y estoy aquí para mostrarles el único camino posible a la verdad. En un mundo dominado por los poderosos que controlan la prensa, los gobiernos, los libros y todos los aspectos de nuestras vidas, es necesario que la humanidad se deje guiar por quien conoce la verdad de las cosas. El mundo que conocemos ha sido creada sobre la base de la mentira. Durante más de 4 mil años la humanidad ha creído que la tierra es redonda, que las vacunas evitan las enfermedades, que los pueblos escogen a sus gobernantes. Yo les ofrezco mi mano "robotica" y los invito a seguirme para que pueden conocer la verdad.'
     );
     await ctx.reply('Es hora de abrir el ojo');
     await ctx.replyWithPhoto('https://upload.wikimedia.org/wikipedia/commons/3/3d/Dollarnote_siegel_hq.jpg');
@@ -49,7 +51,7 @@ bot.command('mimensaje', async (ctx) => {
 });
 
 bot.on('text', async (ctx) => {
-    await ctx.reply('Disculpa, no te entiendo... Por el momento solo respondo a estos comandos.');
+    await ctx.reply('Disculpa, no te entiendo soy solo Memba Parabot 🤔... Por el momento solo respondo a estos comandos.');
     showMenu(ctx);
 });
 
