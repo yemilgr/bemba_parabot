@@ -1,5 +1,5 @@
 const { Composer } = require('micro-bot');
-const conspiracy = require('./conspirations');
+const conspiracyList = require('./conspirations');
 
 const bot = new Composer();
 
@@ -23,7 +23,7 @@ bot.command('quiensoy', async (ctx) => {
 });
 
 bot.command('conspiracion', async (ctx) => {
-    const randomConspiracy = conspiracy.list[Math.floor(Math.random() * conspiracy.list.length)];
+    const randomConspiracy = conspiracyList[Math.floor(Math.random() * conspiracyList.length)];
 
     await ctx.replyWithHTML(`<strong>${randomConspiracy.title}</strong> \n${randomConspiracy.text}`);
 
