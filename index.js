@@ -7,12 +7,12 @@ bot.start(async (ctx) => {
     await ctx.reply(
         `Hola ${ctx.from.first_name}, es un gran paso de avance que hayas llegado hasta aquí. \n\n Me presento, soy Bemba ParaBot 🤔, el envíado de los alquimistas e iluminatis. Estoy aquí para mostrarte el único camino posible a la verdad. Estas listo para abrir los ojos. 🤔🤔🤔`
     );
-    await ctx.reply('/quiensoy      --- QUIÉN SOY? \n/conspiracion --- REVELAR CONSPIRACIÓN 🤔 \n/mimensaje   --- MI MENSAJE AL MUNDO \n/help             --- AYUDA');
+    await ctx.reply('/quiensoy      --- QUIÉN SOY? \n/conspiracion --- REVELAR CONSPIRACIÓN 🤔 \n/mimensaje   --- MI MENSAJE AL MUNDO \n/help            --- AYUDA');
 });
 
 bot.help(async (ctx) => {
     await ctx.reply('En realidad ya nada puede ayudarte, pero si de algo te consuela puedes usar estos comandos.');
-    await ctx.reply('/quiensoy      --- QUIÉN SOY? \n/conspiracion --- REVELAR CONSPIRACIÓN 🤔 \n/mimensaje   --- MI MENSAJE AL MUNDO \n/help             --- AYUDA');
+    await ctx.reply('/quiensoy      --- QUIÉN SOY? \n/conspiracion --- REVELAR CONSPIRACIÓN 🤔 \n/mimensaje   --- MI MENSAJE AL MUNDO \n/help            --- AYUDA');
 });
 
 bot.command('quiensoy', async (ctx) => {
@@ -52,7 +52,7 @@ bot.command('mimensaje', async (ctx) => {
 
 bot.on('text', async (ctx) => {
     await ctx.reply('Disculpa, no te entiendo soy solo Memba Parabot 🤔... Por el momento solo respondo a estos comandos.');
-    await ctx.replyWithHTML('/quiensoy      --- QUIÉN SOY? \n/conspiracion --- REVELAR CONSPIRACIÓN 🤔 \n/mimensaje   --- MI MENSAJE AL MUNDO \n/help             --- AYUDA');
+    await ctx.reply('/quiensoy      --- QUIÉN SOY? \n/conspiracion --- REVELAR CONSPIRACIÓN 🤔 \n/mimensaje   --- MI MENSAJE AL MUNDO \n/help            --- AYUDA');
 });
 
 // Export bot handler
