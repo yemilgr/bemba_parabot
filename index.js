@@ -38,7 +38,7 @@ bot.command('conspiracion', async (ctx) => {
     await ctx.replyWithHTML("Revelar otra <a href='/conspiracion'>/conspiracion</a> 🤔🤔🤔 ?");
 });
 
-bot.command('mi-mensaje', async (ctx) => {
+bot.command('mimensaje', async (ctx) => {
     await ctx.replyWithHTML(
         '<strong>Este bot es solo una broma entre amigos, no tome en serio ningun mensaje difundido por esta plataforma.</strong> \n\n Las teorías de la conspiración pueden ser vistas como divertidas, pero son potencialmente peligrosas: "Las teorías de la conspiración tienen consecuencias negativas para la sociedad. Esto es especialmente cierto en el caso de una pandemia, ya que la creencia en conspiraciones puede dañar o incluso matar a la gente. Por consiguiente, es esencial que el público esté informado sobre cómo identificar las teorías de la conspiración para que pueda ignorarlas'
     );
@@ -57,7 +57,7 @@ bot.on('text', async (ctx) => {
 });
 
 function showMenu(ctx) {
-    ctx.replyWithHTML('/quiensoy      --- QUIÉN SOY? \n/conspiracion --- REVELAR CONSPIRACIÓN 🤔 \n/mi-mensaje    --- MI MENSAJE AL MUNDO \n/help             --- AYUDA');
+    ctx.replyWithHTML('/quiensoy      --- QUIÉN SOY? \n/conspiracion --- REVELAR CONSPIRACIÓN 🤔 \n/mimensaje   --- MI MENSAJE AL MUNDO \n/help             --- AYUDA');
 }
 
 // Export bot handler
