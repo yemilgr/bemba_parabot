@@ -23,8 +23,6 @@
   },
   "homepage": "https://github.com/yemilgr/bemba_parabot#readme",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "micro-bot": "^2.5.3",
-    "telegraf": "^3.38.0"
+    "micro-bot": "^2.5.3"
   }
 }

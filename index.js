@@ -3,10 +3,6 @@ const conspiracy = require('./conspirations');
 
 const bot = new Composer();
 
-bot.catch((err, ctx) => {
-    console.log(`Ooops, encountered an error for ${ctx.updateType}`, err);
-});
-
 bot.start(async (ctx) => {
     await ctx.replyWithHTML(`Hola <strong>${ctx.from.first_name}</strong>, Soy Bemba ParaBot, que quires saber hoy 🤔🤔🤔`);
     showMenu(ctx);
