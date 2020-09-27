@@ -38,13 +38,26 @@ bot.command('conspiracion', async (ctx) => {
     await ctx.replyWithHTML("Revelar otra <a href='/conspiracion'>/conspiracion</a> 🤔🤔🤔 ?");
 });
 
+bot.command('mi-mensaje', async (ctx) => {
+    await ctx.replyWithHTML(
+        '<strong>Este bot es solo una broma entre amigos, no tome en serio ningun mensaje difundido por esta plataforma.</strong> \n\n Las teorías de la conspiración pueden ser vistas como divertidas, pero son potencialmente peligrosas: "Las teorías de la conspiración tienen consecuencias negativas para la sociedad. Esto es especialmente cierto en el caso de una pandemia, ya que la creencia en conspiraciones puede dañar o incluso matar a la gente. Por consiguiente, es esencial que el público esté informado sobre cómo identificar las teorías de la conspiración para que pueda ignorarlas'
+    );
+    await ctx.reply(
+        'Comparte estos recursos de aprendizaje para que todos podamos participar en la educación entre iguales sobre estos temas. Resistir a la Desinfodemia: Alfabetización mediática e informativa para todos, de todos.'
+    );
+    await ctx.replyWithDocument('https://conspiracytheories.eu/_wpx/wp-content/uploads/2020/03/COMPACT_Guide-2.pdf');
+    await ctx.replyWithDocument('https://www.climatechangecommunication.org/wp-content/uploads/2020/03/ConspiracyTheoryHandbook.pdf');
+
+    await ctx.replyWithPhoto('https://es.unesco.org/sites/default/files/styles/extra_large_1600x1600/public/web_newspiensa.jpg?itok=344qoTta');
+});
+
 bot.on('text', async (ctx) => {
     await ctx.reply('Disculpa, no te entiendo... Por el momento solo respondo a estos comandos.');
     showMenu(ctx);
 });
 
 function showMenu(ctx) {
-    ctx.replyWithHTML('/quiensoy      --- QUIÉN SOY? \n/conspiracion --- CONSPIRACIÓN 🤔 \n/help             --- AYUDA');
+    ctx.replyWithHTML('/quiensoy      --- QUIÉN SOY? \n/conspiracion --- REVELAR CONSPIRACIÓN 🤔 \n/mi-mensaje    --- MI MENSAJE AL MUNDO \n/help             --- AYUDA');
 }
 
 // Export bot handler
